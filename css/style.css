@@ -1,0 +1,375 @@
+@font-face {
+    font-family: main-font;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+.title{
+    width: fit-content;
+    margin: auto;
+}
+.title h3{
+    position: relative;
+    font-weight: 900;
+    font-size: 40px;
+    z-index: 4;
+}
+.title h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    z-index: -1;
+}
+p{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+/* start-header */
+header{
+    background-image: url(../imgs/bg.jpg);
+    background-size: cover;
+    font-family: main-font;
+}
+header ul li a{
+    color: inherit;
+    width: 35px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.3);
+}
+header h1::after{
+    content: "";
+    animation: typing 5s infinite;
+}
+@keyframes typing{
+    0%{
+        content: " |";
+    }
+    2%{
+        content: " D|";
+    }
+    4%{
+        content: " De|";
+    }
+    6%{
+        content: " Des|";
+    }
+    8%{
+        content: " Desi|";
+    }
+    10%{
+        content: " Desig|";
+    }
+    12%{
+        content: " Design|";
+    }
+    14%{
+        content: " Designe|";
+    }
+    16%{
+        content: " Designer|";
+    }
+    18%{
+        content: " Designe|";
+    }
+    20%{
+        content: " Design|";
+    }
+    22%{
+        content: " Desig|";
+    }
+    24%{
+        content: " Desi|";
+    }
+    26%{
+        content: " Des|";
+    }
+    28%{
+        content: " De|";
+    }
+    30%{
+        content: " Dev|";
+    }
+    32%{
+        content: " Deve|";
+    }
+    34%{
+        content: " Devel|";
+    }
+    36%{
+        content: " Develo|";
+    }
+    38%{
+        content: " Develop|";
+    }
+    40%{
+        content: " Develope|";
+    }
+    42%{
+        content: " Developer|";
+    }
+    44%{
+        content: " Develope|";
+    }
+    46%{
+        content: " Develop|";
+    }
+    48%{
+        content: " Develo|";
+    }
+    50%{
+        content: " Devel|";
+    }
+    52%{
+        content: " Deve|";
+    }
+    54%{
+        content: " Dev|";
+    }
+    56%{
+        content: " De|";
+    }
+    58%{
+        content: "D|";
+    }
+    60%{
+        content: " |";
+    }
+    62%{
+        content: " L|";
+    }
+    64%{
+        content: " La|";
+    }
+    66%{
+        content: " Lar|";
+    }
+    68%{
+        content: " Larr|";
+    }
+    70%{
+        content: " Larry|";
+    }
+    72%{
+        content: " Larry D|";
+    }
+    74%{
+        content: " Larry Dan|";
+    }
+    76%{
+        content: " Larry Danie|";
+    }
+    78%{
+        content: " Larry Daniels|";
+    }
+    80%{
+        content: " Larry Daniel|";
+    }
+    82%{
+        content: " Larry Danie|";
+    }
+    84%{
+        content: " Larry Dani|";
+    }
+    86%{
+        content: " Larry Dan|";
+    }
+    88%{
+        content: " Larry D|";
+    }
+    90%{
+        content: " Larry|";
+    }
+    92%{
+        content: " Larr|";
+    }
+    94%{
+        content: " La|";
+    }
+    96%{
+        content: " L|";
+    }
+    98%{
+        content: " L|";
+    }
+    100%{
+        content: " |";
+    }
+}
+/* end-header */
+/* start-nav */
+.navbar.scrolled {
+    background-color: #333 !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav a{
+    font-family: main-font;
+}
+nav ul li a{
+    font-family: "Poppins", serif;
+}
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+nav ul li .active:after {
+    width: 100%;
+}
+/* end-nav */
+/* start-about */
+.about .progress{
+    height: 25px;
+    background-color: #f8f9fa;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.about h2{
+    font-family: main-font;
+}
+.about .buttons button:first-child:hover{
+    background-color: #FFF !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+}
+.about .buttons button:last-child:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.about .img-about{
+    position: relative;
+}
+.about .img-about::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -25px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+/* end-about */
+/* start-services */
+.serives .item h6{
+    font-family: main-font;
+    letter-spacing: -1px;
+}
+.serives .item span{
+    transition: all 1s;
+}
+.serives .item:hover span{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+/* end-services */
+/* start-portfolio */
+.portfolio .caption{
+    opacity: 0;
+    transition: all 1s;
+}
+.portfolio .caption:hover{
+    opacity: 1;
+}
+.portfolio .caption p{
+    letter-spacing: 3px;
+}
+.portfolio .caption span:hover{
+    background-color: #FFF !important;
+    border: 1px solid #000;
+}
+.portfolio .caption span:hover a{
+    color: #000 !important;
+}
+.portfolio .nav-link.active {
+    background-color: white !important;
+    color: black !important;
+    position: relative;
+}
+.portfolio .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 24%;
+    width: 50%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+}
+/* end-portfolio */
+/* start-client */
+.client img{
+    width: 100px;
+    height: 100px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: none;
+}
+.carousel-indicators button{
+    background-color: #666262 !important;
+}
+.client h2{
+    font-family: main-font;
+    font-size: 15px;
+}
+.count h2{
+    font-family: main-font;
+    letter-spacing: -2px;
+}
+/* end-client */
+/* start-team */
+.team{
+    font-family: main-font;
+}
+.team  .card .caption{
+    opacity: 0;
+    transition: all 1s;
+}
+.team .card:hover .caption{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+.team .card .image img{
+    transition: all 2s;
+}
+.team .card .image:hover img{
+    transform: scale(1.2,1.2);
+}
+.team .caption span:hover{
+    background-color: #FFF !important;
+    border: 1px solid #000;
+}
+.team .caption span:hover a{
+    color: #000 !important;
+}
+/* end-team */
+/* start-contact */
+.contact{
+    font-family: main-font;
+}
+.contact .item span{
+    transition: all 1s;
+}
+.contact .item:hover span{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.contact .form-control:focus {
+    box-shadow: none !important;
+    border-color: #ced4da !important;
+    outline: none !important;
+}
+.contact button:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+}
